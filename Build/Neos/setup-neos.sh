@@ -21,11 +21,8 @@ else
 
 	# Make sure to init xdebug, not to slow-down composer
 	/init-xdebug.sh
-	
-	# Create a separate working directory in which the neos instance can be installed in.
-	
-	if [ ! -d "Neos-Ui" ]; then mkdir Neos-Ui; fi;
-	git clone -b $REPOSITORY_URL .
+
+	cd Neos
 
 	cp neos-ui/Build/TravisCi/composer* Neos-Ui/
 
