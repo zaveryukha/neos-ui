@@ -14,6 +14,7 @@ if [ -n "$GITHUB_OAUTH_TOKEN" ]; then composer config github-oauth.github.com ${
 shopt -s dotglob
 
 cd /data
+mkdir www
 cp /data/Neos/Build/TravisCi/composer* /data/www/
 cd /data/www/
 composer install --no-interaction
