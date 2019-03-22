@@ -22,6 +22,7 @@ else
 	# Make sure to init xdebug, not to slow-down composer
 	/init-xdebug.sh
 
+	pwd
 	cd Neos
 
 	cp neos-ui/Build/TravisCi/composer* Neos-Ui/
