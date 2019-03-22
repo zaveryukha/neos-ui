@@ -15,7 +15,6 @@ else
 	# Add the oAuth token to git to avoid errors with composer because of https://github.com/composer/composer/issues/1314
 	if [ -n "$GITHUB_OAUTH_TOKEN" ]; then composer config github-oauth.github.com ${GITHUB_OAUTH_TOKEN}; fi;
 
-
 	# Handle hidden files with the `mv` command.
 	shopt -s dotglob
 
@@ -24,7 +23,7 @@ else
 	
 	# Move our repository and the configuration files into place.
 	mkdir -p Neos/Packages/Application/Neos.Neos.Ui
-	mv ../Neos/** Packages/Application/Neos.Neos.Ui/
+	mv ../Neos/** Packages/Application/Neos.Neos.Ui
 	cd Neos
 	
 	# Temporarily move the neos-ui package out so it doesn't get overwritten by composer
