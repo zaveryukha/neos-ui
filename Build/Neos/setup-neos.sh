@@ -18,13 +18,13 @@ else
 	# Handle hidden files with the `mv` command.
 	shopt -s dotglob
 
-	cd ..
+	cd /data
 	cp Neos/Build/TravisCi/composer* Neos/
-	
+	cd Neos
 	# Move our repository and the configuration files into place.
 	mkdir -p Neos/Packages/Application/Neos.Neos.Ui
 	mv ../Neos/** Packages/Application/Neos.Neos.Ui
-	cd Neos
+	
 	
 	# Temporarily move the neos-ui package out so it doesn't get overwritten by composer
 	mv Packages/Application/Neos.Neos.Ui temp
