@@ -22,11 +22,11 @@ else
 	# Make sure to init xdebug, not to slow-down composer
 	/init-xdebug.sh
 
-	cp neos/Build/TravisCi/composer* Neos-Ui/
+	cp Neos/Build/TravisCi/composer* Neos-Ui/
 
 	# Move our repository and the configuration files into place.
 	mkdir -p Packages/Application/Neos.Neos.Ui
-	mv ../neos/** Packages/Application/Neos.Neos.Ui/
+	mv ../Neos/** Packages/Application/Neos.Neos.Ui/
 
 	# Temporarily move the neos-ui package out so it doesn't get overwritten by composer
 	mv Packages/Application/Neos.Neos.Ui temp
