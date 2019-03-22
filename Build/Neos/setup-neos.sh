@@ -21,7 +21,7 @@ else
 
 	# Make sure to init xdebug, not to slow-down composer
 	/init-xdebug.sh
-
+	cd ..
 	cp Neos/Build/TravisCi/composer* Neos-Ui/
 
 	# Move our repository and the configuration files into place.
