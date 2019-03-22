@@ -24,6 +24,7 @@ else
 
 	pwd
 	cd Neos
+	ls -la
 
 	cp neos-ui/Build/TravisCi/composer* Neos-Ui/
 
