@@ -19,11 +19,8 @@ else
 	# Handle hidden files with the `mv` command.
 	shopt -s dotglob
 
-	# Make sure to init xdebug, not to slow-down composer
-	/init-xdebug.sh
 	cd ..
 	cp Neos/Build/TravisCi/composer* Neos/
-
 	
 	# Move our repository and the configuration files into place.
 	mkdir -p Neos/Packages/Application/Neos.Neos.Ui
